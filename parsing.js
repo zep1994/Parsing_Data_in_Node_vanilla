@@ -14,6 +14,8 @@ const server = http.createServer((req, res) => {
     }
 
     if (url === '/message' && method === 'POST') {
+        //hits the if statement and will register the events, but it will not execute yet
+
         const body = [];
         //allows us to listen to certain events
         req.on('data', (chunk) => {
